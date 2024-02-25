@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="shortcut icon" href="favicon.svg" type="xml/svg">
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/media.css"/>
+  <title>Burgers</title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <nav class="header-nav">
+        <div class="header-nav-content">
+          <a href="#" class="header-nav-logo">
+            <img src="images/logo.svg" alt="logo"/>
+          </a>
+          <ul class="header-nav-list">
+            <li class="header-nav-link">
+              <a href="#" data-link="about">Почему у нас</a>
+            </li>
+            <li class="header-nav-link">
+              <a href="#" data-link="products">Меню бургеров</a>
+            </li>
+            <li class="header-nav-link">
+              <a href="#" data-link="order">Оформление заказа</a>
+            </li>
+            <button class="header-nav-close">
+              <img src="images/close.svg" alt="">
+            </button>
+          </ul>
+          <div class="header-nav-btns">
+            <button class="header-nav-btn"><img src="images/menu.svg" alt="" class="menu"></button>
+            <button title="Изменить валюту" id="currency" class="currency">$</button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-content">
+        <div class="header-content-info">
+          <span class="header-content-subtitle">Новое меню</span>
+          <h1 class="header-content-title">Бургер Чеддер</h1>
+          <p class="header-content-text">Мы обновили наше меню, спешите попробовать сезонные новинки и
+            насладиться отличным вкусом наших бургеров. Готовим для вас лучшие
+            бургеры в городе из отборной мраморной говядины.
+          </p>
+          <button class="header-content-btn" id="main-action-button">Смотреть меню</button>
+        </div>
+        <img src="images/main_burger.png" alt="" class="header-content-img"/>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="about" id="about">
+      <div class="about-wrapper">
+        <div class="container">
+          <h2 class="section-title">почему нас выбирают?</h2>
+          <div class="about-items">
+            <div class="about-item">
+              <img src="images/burger.png" alt="burger" class="about-item-img">
+              <h3 class="about-item-title">Авторские рецепты</h3>
+              <p class="about-item-text">Наши бургеры обладают уникальным сочетанием вкусов и не похожи ни на какие
+                другие. Мы тщательно отбираем лучшие ингредиенты и сочетания вкусов для нашего меню.
+              </p>
+            </div>
+            <div class="about-item">
+              <img src="images/meat.png" alt="meat" class="about-item-img">
+              <h3 class="about-item-title">Мраморная говядина</h3>
+              <p class="about-item-text">Для наших бургеров мы используем отборную 100% мраморную говядину, которую
+                закупаем исключительно у фермеров. Мы уверены в качестве нашего мяса.
+              </p>
+            </div>
+            <div class="about-item">
+              <img src="images/food truck.png" alt="burger" class="about-item-img">
+              <h3 class="about-item-title">Быстрая доставка</h3>
+              <p class="about-item-text">Мы доставляем в пределах МКАД за 30 минут, а если не успеем - доставка
+                бесплатно.
+                Мы тщательно упаковываем наши бургеры, чтобы по дороге они не остыли.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <div class="products-wrapper">
+        <div class="container">
+          <h2 class="section-title">выберите свой бургер</h2>
+          <div class="products-items">
+            <div class="products-item">
+              <img src="images/burger_1.png" alt="burger-1" class="products-item-img">
+              <h2 class="products-item-title">Бургер чеддер & бекон</h2>
+              <p class="products-item-text">Котлета из говядины крисли, булочки, томат, сыр Чеддер, грудников, лук
+                красный, салат айсбер, майонез, кетчуп, сырный соус</p>
+              <div class="products-item-extra">
+                <div class="products-item-info">
+                  <div class="products-item-price" data-price="7">7 $</div>
+                  <div class="products-item-weight">390 гр</div>
+                </div>
+                <div class="products-item-action">
+                  <button class="product-item-btn">
+                    <span>Заказать</span>
+                    <img src="images/cart.svg" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="products-item">
+              <img src="images/burger_2.png" alt="burger-2" class="products-item-img">
+              <h2 class="products-item-title">BBQ с беконом и курицей</h2>
+              <p class="products-item-text">Булочка бриошь с кунжутом, куриная котлета, сыр чеддер, томат, огурец
+                маринованный, лук маринованный, салат Ромен, бекон, соус BBQ</p>
+              <div class="products-item-extra">
+                <div class="products-item-info">
+                  <div class="products-item-price" data-price="8">8 $</div>
+                  <div class="products-item-weight">360 гр</div>
+                </div>
+                <div class="products-item-action">
+                  <button class="product-item-btn">
+                    <span>Заказать</span>
+                    <img src="images/cart.svg" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="products-item">
+              <img src="images/burger_3.png" alt="burger-3" class="products-item-img">
+              <h2 class="products-item-title">Дабл биф бургер</h2>
+              <p class="products-item-text">Две говяжьи котлеты, сыр чеддер, салат романо, маринованные огурцы, свежий
+                томат, бекон, красный лук, соус бургер, горчица</p>
+              <div class="products-item-extra">
+                <div class="products-item-info">
+                  <div class="products-item-price" data-price="10">10 $</div>
+                  <div class="products-item-weight">420 гр</div>
+                </div>
+                <div class="products-item-action">
+                  <button class="product-item-btn">
+                    <span>Заказать</span>
+                    <img src="images/cart.svg" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="products-item">
+              <img src="images/burger_4.png" alt="burger-4" class="products-item-img">
+              <h2 class="products-item-title">Баварский бургер</h2>
+              <p class="products-item-text">Булочка для бургера, говяжья котлета, красный лук, сыр, охотничья колбаска,
+                соус барбекю, соус сырный, салат айсберг</p>
+              <div class="products-item-extra">
+                <div class="products-item-info">
+                  <div class="products-item-price" data-price="8">8 $</div>
+                  <div class="products-item-weight">360 гр</div>
+                </div>
+                <div class="products-item-action">
+                  <button class="product-item-btn">
+                    <span>Заказать</span>
+                    <img src="images/cart.svg" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="products-item">
+              <img src="images/burger_5.png" alt="burger-5" class="products-item-img">
+              <h2 class="products-item-title">Бекон чизбургер</h2>
+              <p class="products-item-text">Булочка для бургера, говяжья котлета, грудинка, помидор, огурец
+                маринованный,
+                сыр, сырный соус, кетчуп, зелень</p>
+              <div class="products-item-extra">
+                <div class="products-item-info">
+                  <div class="products-item-price" data-price="8">8 $</div>
+                  <div class="products-item-weight">220 гр</div>
+                </div>
+                <div class="products-item-action">
+                  <button class="product-item-btn">
+                    <span>Заказать</span>
+                    <img src="images/cart.svg" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="products-item">
+              <img src="images/burger_6.png" alt="burger-6" class="products-item-img">
+              <h2 class="products-item-title">Индиана бургер</h2>
+              <p class="products-item-text">Булочка для бургера, котлета куриная, грудинка, яйцо, огурец маринованный,
+                криспи лук, кетчуп, соус сырный, горчица, зелень</p>
+              <div class="products-item-extra">
+                <div class="products-item-info">
+                  <div class="products-item-price" data-price="9">9 $</div>
+                  <div class="products-item-weight">320 гр</div>
+                </div>
+                <div class="products-item-action">
+                  <button class="product-item-btn">
+                    <span>Заказать</span>
+                    <img src="images/cart.svg" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="products-item">
+              <img src="images/burger_7.png" alt="burger-7" class="products-item-img">
+              <h2 class="products-item-title">Вегги бургер</h2>
+              <p class="products-item-text">Булочка для бургера, вегетарианская котлета, красный лук, сыр, свежий томат,
+                соус барбекю, соус сырный, салат айсберг</p>
+              <div class="products-item-extra">
+                <div class="products-item-info">
+                  <div class="products-item-price" data-price="8">8 $</div>
+                  <div class="products-item-weight">280 гр</div>
+                </div>
+                <div class="products-item-action">
+                  <button class="product-item-btn">
+                    <span>Заказать</span>
+                    <img src="images/cart.svg" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="products-item">
+              <img src="images/burger_8.png" alt="burger-8" class="products-item-img">
+              <h2 class="products-item-title">Плаксивый Джо</h2>
+              <p class="products-item-text">Булочка для бургера, говяжья котлета, грудинка, помидор, огурец
+                маринованный,
+                красный лук, сыр, перец халапеньо, кетчуп, зелень</p>
+              <div class="products-item-extra">
+                <div class="products-item-info">
+                  <div class="products-item-price" data-price="7">7 $</div>
+                  <div class="products-item-weight">300 гр</div>
+                </div>
+                <div class="products-item-action">
+                  <button class="product-item-btn">
+                    <span>Заказать</span>
+                    <img src="images/cart.svg" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="products-item">
+              <img src="images/burger_9.png" alt="burger-9" class="products-item-img">
+              <h2 class="products-item-title">Двойной чиз бургер</h2>
+              <p class="products-item-text">Булочка для бургера, две говяжьи котлеты, двойной сыр чеддар, огурец
+                маринованный, криспи лук, кетчуп, соус сырный, горчица, зелень</p>
+              <div class="products-item-extra">
+                <div class="products-item-info">
+                  <div class="products-item-price" data-price="11">11 $</div>
+                  <div class="products-item-weight">400 гр</div>
+                </div>
+                <div class="products-item-action">
+                  <button class="product-item-btn">
+                    <span>Заказать</span>
+                    <img src="images/cart.svg" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="products-item">
+              <img src="images/burger_10.png" alt="burger-10" class="products-item-img">
+              <h2 class="products-item-title">Фрешбургер</h2>
+              <p class="products-item-text">Булочка для бургера, говяжья котлета, бекон, сыр чеддар, яйцо, салями, соус
+                барбекю, соус сырный, салат айсберг, свежий томат</p>
+              <div class="products-item-extra">
+                <div class="products-item-info">
+                  <div class="products-item-price" data-price="9">9 $</div>
+                  <div class="products-item-weight">300 гр</div>
+                </div>
+                <div class="products-item-action">
+                  <button class="product-item-btn">
+                    <span>Заказать</span>
+                    <img src="images/cart.svg" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="products-item">
+              <img src="images/burger_11.png" alt="burger-11" class="products-item-img">
+              <h2 class="products-item-title">Цуккини бургер</h2>
+              <p class="products-item-text">Булочка для бургера, вегетарианская котлета из нута, цуккини на гриле,
+                помидор, огурец маринованный, сыр, горчичный соус, кетчуп, зелень</p>
+              <div class="products-item-extra">
+                <div class="products-item-info">
+                  <div class="products-item-price" data-price="8">8 $</div>
+                  <div class="products-item-weight">320 гр</div>
+                </div>
+                <div class="products-item-action">
+                  <button class="product-item-btn">
+                    <span>Заказать</span>
+                    <img src="images/cart.svg" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="products-item">
+              <img src="images/burger_12.png" alt="burger-12" class="products-item-img">
+              <h2 class="products-item-title">Двойной бургер чеддар</h2>
+              <p class="products-item-text">Булочка для бургера, котлета говяжья, грудинка, красный лук, огурец
+                маринованный, томат, кетчуп, двойной сыр чеддар, горчица, зелень</p>
+              <div class="products-item-extra">
+                <div class="products-item-info">
+                  <div class="products-item-price" data-price="9">9 $</div>
+                  <div class="products-item-weight">360 гр</div>
+                </div>
+                <div class="products-item-action">
+                  <button class="product-item-btn">
+                    <span>Заказать</span>
+                    <img src="images/cart.svg" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="products-item">
+              <img src="images/burger_13.png" alt="burger-13" class="products-item-img">
+              <h2 class="products-item-title">Блэк Уайт Лайт</h2>
+              <p class="products-item-text">Черная и белая булочка для бургера, говяжья котлета, сыр Пармезан, острый
+                соус
+              </p>
+              <div class="products-item-extra">
+                <div class="products-item-info">
+                  <div class="products-item-price" data-price="12">12 $</div>
+                  <div class="products-item-weight">290 гр</div>
+                </div>
+                <div class="products-item-action">
+                  <button class="product-item-btn">
+                    <span>Заказать</span>
+                    <img src="images/cart.svg" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="products-item">
+              <img src="images/burger_14.png" alt="burger-14" class="products-item-img">
+              <h2 class="products-item-title">Блэк Уайт Бекон</h2>
+              <p class="products-item-text">Черная и белая булочка для бургера, говяжья котлета, Бекон, сыр Чеддар,
+                салат
+                айсберг, соус, огурчик</p>
+              <div class="products-item-extra">
+                <div class="products-item-info">
+                  <div class="products-item-price" data-price="13">13 $</div>
+                  <div class="products-item-weight">310 гр</div>
+                </div>
+                <div class="products-item-action">
+                  <button class="product-item-btn">
+                    <span>Заказать</span>
+                    <img src="images/cart.svg" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="products-item">
+              <img src="images/burger_15.png" alt="burger-15" class="products-item-img">
+              <h2 class="products-item-title">Блэк Уайт Макс</h2>
+              <p class="products-item-text">Черная и белая булочка для бургера, говяжья котлета, сыр Чеддар, салат
+                айсберг, яйцо, черный соус</p>
+              <div class="products-item-extra">
+                <div class="products-item-info">
+                  <div class="products-item-price" data-price="16">16 $</div>
+                  <div class="products-item-weight">330 гр</div>
+                </div>
+                <div class="products-item-action">
+                  <button class="product-item-btn">
+                    <span>Заказать</span>
+                    <img src="images/cart.svg" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="products-item">
+              <img src="images/burger_16.png" alt="burger-16" class="products-item-img">
+              <h2 class="products-item-title">Блэк Стар Лайт</h2>
+              <p class="products-item-text">Черная булочка для бургера, куриная котлета, яйцо,салат айсберг, свежий
+                томат,
+                огурец, соус Блэк</p>
+              <div class="products-item-extra">
+                <div class="products-item-info">
+                  <div class="products-item-price" data-price="13">13 $</div>
+                  <div class="products-item-weight">290 гр</div>
+                </div>
+                <div class="products-item-action">
+                  <button class="product-item-btn">
+                    <span>Заказать</span>
+                    <img src="images/cart.svg" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="products-item">
+              <img src="images/burger_17.png" alt="burger-17" class="products-item-img">
+              <h2 class="products-item-title">Блэк Стар</h2>
+              <p class="products-item-text">Черная булочка для бургера, говяжья котлета, сыр Чеддар, салат айсберг,
+                свежий
+                томат, огурец</p>
+              <div class="products-item-extra">
+                <div class="products-item-info">
+                  <div class="products-item-price" data-price="14">14 $</div>
+                  <div class="products-item-weight">310 гр</div>
+                </div>
+                <div class="products-item-action">
+                  <button class="product-item-btn">
+                    <span>Заказать</span>
+                    <img src="images/cart.svg" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="products-item">
+              <img src="images/burger_18.png" alt="burger-18" class="products-item-img">
+              <h2 class="products-item-title">Блэк Стар Макс</h2>
+              <p class="products-item-text">Черная булочка для бургера, говяжья котлета, Бекон, Лук, сыр Чеддар, салат
+                айсберг, свежий томат, кетчуп</p>
+              <div class="products-item-extra">
+                <div class="products-item-info">
+                  <div class="products-item-price" data-price="15">15 $</div>
+                  <div class="products-item-weight">330 гр</div>
+                </div>
+                <div class="products-item-action">
+                  <button class="product-item-btn">
+                    <span>Заказать</span>
+                    <img src="images/cart.svg" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="order" id="order">
+      <div class="container">
+        <h2 class="section-title">оформление заказа</h2>
+        <div class="order-content">
+          <img src="images/order_image.png" alt="order-img" class="order-img">
+          <div class="order-form">
+            <h3 class="order-form-title">Заполните все данные и наш менеджер свяжется с вами для подтверждения заказа
+            </h3>
+            <div class="order-form-inputs">
+              <div class="order-form-input">
+                <input type="text" placeholder="Выберите товар в списке" id="burger">
+              </div>
+              <div class="order-form-input">
+                <input type="text" placeholder="Ваше имя" id="name">
+              </div>
+              <div class="order-form-input">
+                <input type="tel" placeholder="Ваш телефон" id="phone">
+              </div>
+              <button class="order-form-btn" id="order-action">Оформить заказ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <div class="container">
+        <div class="footer-content">
+          <a href="#" class="footer-logo">
+            <img src="images/logo.svg" alt="Logo">
+          </a>
+          <p class="copyrights">© Все права защищены 2022</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
